@@ -53,7 +53,7 @@ def get_trained_model(pretrained=True, **kwargs):
     
     if pretrained:
         state_dict = torch.hub.load_state_dict_from_url(
-            'https://raw.githubusercontent.com/jarvisyjw/MixVPR/blob/main/model.ckpt',  # Update with your weights URL
+            'https://raw.githubusercontent.com/jarvisyjw/MixVPR/main/model.ckpt',  # Update with your weights URL
             map_location=torch.device('cpu')  # Change if GPU loading is needed
         )
         
