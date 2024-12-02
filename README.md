@@ -117,6 +117,17 @@ model.load_state_dict(state_dict)
 model.eval()
 ```
 
+### Torch Hub Support
+Currently support loading the MixVPR model with best performance. (Note that I am only creating this for easy testing, original author is Ali-bey, Amar)
+
+```bash
+# Load the model using torch.hub
+model = torch.hub.load("jarvisyjw/MixVPR", 'get_trained_model', pretrained=True)
+# Test the model
+model.eval()
+```
+
+
 ## Bibtex
 
 ```
