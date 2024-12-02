@@ -1,5 +1,5 @@
 import torch
-from main import VPRModel  # Replace with your model's class
+from model import VPRModel  # Replace with your model's class
 
 def MixVPR(pretrained=True, **kwargs):
     """
@@ -8,7 +8,7 @@ def MixVPR(pretrained=True, **kwargs):
     model = VPRModel(**kwargs)  # Replace with your model initialization
     if pretrained:
         state_dict = torch.hub.load_state_dict_from_url(
-            '/home/jarvis/jw_ws/release/MixVPR/model.ckpt',  # Update with your weights URL
+            'https://raw.githubusercontent.com/jarvisyjw/MixVPR/blob/main/model.ckpt',  # Update with your weights URL
             map_location=torch.device('cpu')  # Change if GPU loading is needed
         )
         print(state_dict)
