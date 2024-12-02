@@ -6,7 +6,6 @@ import utils
 
 from models import helper
 
-
 class VPRModel(pl.LightningModule):
     """This is the main model for Visual Place Recognition
     we use Pytorch Lightning for modularity purposes.
