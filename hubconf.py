@@ -1,7 +1,7 @@
 import torch
-from model import VPRModel  # Replace with your model's class
+from vpr_model import VPRModel  # Replace with your model's class
 
-def MixVPR(pretrained=True, **kwargs):
+def get_trained_model(pretrained=True, **kwargs):
     """
     Loads the model. If `pretrained` is True, it loads pre-trained weights.
     """
