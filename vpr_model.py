@@ -4,7 +4,7 @@ from pytorch_lightning.callbacks import Callback, ModelCheckpoint
 from torch.optim import lr_scheduler, optimizer
 import utils
 
-from vpr_model import helper
+from models import helper
 
 class VPRModel(pl.LightningModule):
     """This is the main model for Visual Place Recognition
